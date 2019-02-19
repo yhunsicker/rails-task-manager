@@ -1,3 +1,23 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h2 {
+  text-align: center;
+  font-family: arial;
+  color: #474642;
+}
+
+.banner {
+background: #D2E7E5;
+padding: 20px;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  color: #474642;
+}
+
+#add_list {
+  text-align: center;
+}

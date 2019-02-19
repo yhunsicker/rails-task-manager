@@ -1,0 +1,20 @@
+<div class="banner">
+<h2>My Tasks</h2>
+</div>
+
+<% @tasks.each do |task| %>
+<ul class="task_items">
+  <li>
+    <i class="far fa-square">
+      <%= link_to task.title, task_path(task) %>
+      <%= link_to "Destroy", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+    </i>
+  </li>
+</ul>
+<% end %>
+
+
+<div id="add_list">
+<%= link_to "Add to List", tasks_new_path(@task) %>
+</div>
+
